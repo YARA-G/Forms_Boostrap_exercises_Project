@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldsets label and styles</title>
+   
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Full Name</legend>
+            <label for="firstname_label"> First:</label>
+            <input type="text" id="firstname_label" name="firstname" placeholder="Your Name">
+            <label for="lastname_label"> Last Name:</label>
+            <input type="text" id="lastname_label" name="lastname" placeholder="Your last Name">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Email</legend> 
+            <input type="email" name="email" placeholder="username@domain.com" autofocus> <!--Autofocus- al abrir la pagina selecciona un elemento en concreto-->
+            <legend>Phone </legend>
+            <!--Required- obliga a rellenar ese campo antes de enviar// patern indica como hay que introducir los valores xxx--xxx-xx {cantidad de numeros}-->
+            <input type="tel" name="PhoneNumber" placeholder="xxx-xxx-xxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" required>
+            <legend>Pesonal website url</legend>
+            <input type="url" name="url"  placeholder="https://example.com"  pattern="https://.*" size="30" required>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>Gender</legend>
+            <div class="form-check form-check-inline">
+                <label for="Male"> Male:</label>
+                <input type="radio" name="gender_option" id="Male" value="option1" checked>
+                <label for="Female"> Female:</label>
+                <input type="radio" name="gender_option" id="Female" value="option2">
+            </div>
+        </fieldset>
+
+
+
+        <div>
+        <input type="submit" value="SUSCRIBE" >
+        
+        </div>
+
+    </form>
+
+
+
+</body>
+
+</html>
